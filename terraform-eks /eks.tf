@@ -38,7 +38,7 @@ module "eks" {
       max_size     = 3
       desired_size = 2
 
-      capacity_type = "ON_DEMAND"
+      capacity_type = "SPOT"
 
       # Use the EKS-managed default launch template (simpler bootstrap behavior)
       create_launch_template     = false
